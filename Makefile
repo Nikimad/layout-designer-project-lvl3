@@ -2,7 +2,10 @@ install:
 	npm install
 
 lint:
-	npx stylelint ./app/scss/**/*.scss
+	npx stylelint ./app/sass/**/*.scss
 
 deploy:
 	npx surge ./src/
+
+b:
+	npx gulp build
