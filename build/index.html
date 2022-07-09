@@ -7,21 +7,31 @@
     <title>Chat</title>
     <link rel="stylesheet" href="styles/app.css">
   </head>
-  <body class="container-xxxl">
-    <div class="row">
-      <nav class="col-4 navbar navbar-expand navbar-dark bg-primary">
-        <div class="container"><img class="icon navbar-brand py-0 m-0" src="/app/assets/svg/logo.svg" width="15" height="24" alt="">
-          <div id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link active"><img class="icon me-2" src="/app/assets/svg/people.svg" width="25" height="24">Контакты</a></li>
-              <li class="nav-item"><a class="nav-link"><img class="icon me-2" src="/app/assets/svg/chat.svg" width="25" height="24">Сообщения</a></li>
-              <li class="nav-item"><a class="nav-link"><img class="icon me-2" src="/app//assets/svg/person.svg" width="25" height="24">Профиль</a></li>
-            </ul>
+  <body class="bg-light">
+    <div class="container-fluid rounded overflow-hidden bg-white m-4">
+      <div class="row">
+        <nav class="col-4 navbar navbar-expand navbar-dark bg-primary">
+          <div class="container px-1"><img class="icon navbar-brand py-0 m-0" src="/app/assets/svg/logo.svg" height="24" alt="">
+            <div id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active"><img class="icon me-2" src="/app/assets/svg/people.svg" height="24">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link"><img class="icon me-2" src="/app/assets/svg/chat.svg" height="24">Сообщения</a></li>
+                <li class="nav-item"><a class="nav-link"><img class="icon me-2" src="/app//assets/svg/person.svg" height="24">Профиль</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <aside class="aside col-4"></aside>
-      <div class="chat col-8"></div>
+        </nav>
+        <div class="chat col-8"></div>
+      </div>
+      <div class="row">
+        <aside class="aside col-4 pt-5 px-4">
+          <form>
+            <label class="form-label" for="search"></label>
+            <h2 class="mb-4">Контакты</h2>
+            <input class="form-control border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по контактам">
+          </form>
+        </aside>
+      </div>
     </div>
   </body>
 </html>
