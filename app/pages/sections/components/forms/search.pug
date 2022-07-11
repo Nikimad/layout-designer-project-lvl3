@@ -1,4 +1,12 @@
-form
+mixin formContent(name, placeholder)
+    h2.fw-bold.mb-4= name
+    input.form-control.shadow-none.border-0.border-bottom.p-4#search(type="text" placeholder=`Поиск по ${placeholder}`)
+
+form.mb-5
     label.form-label.d-none(for="search")
-    h2.fw-bold.mb-4 Контакты
-    input.form-control.shadow-none.border-0.border-bottom.p-4.mb-5#search(type="text" placeholder="Поиск по контактам")
+    if page.isContacts
+        +formContent('Контакты', 'контактам')
+    if page.isChat
+        +formContent('Чаты', 'сообщениям')
+    if page.isProfile
+        +formContent('Профиль', 'сообщениям')

@@ -10958,11 +10958,13 @@ textarea.form-control-lg {
   align-items: center;
   text-decoration: none;
 }
+.contact-body {
+  width: 79%;
+}
 .contact, .contact-title, .contact-text {
   transition: 0.3s;
 }
 .contact-title, .contact-text {
-  display: block;
   line-height: 1.5;
 }
 .contact .contact-title {
@@ -10981,16 +10983,16 @@ textarea.form-control-lg {
   color: #efefef;
 }
 
-.contacts {
+.tab {
   max-height: calc(100vh - 22rem);
 }
-.contacts {
+.tab {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: auto;
   overflow-x: hidden;
 }
-.contacts::-webkit-scrollbar {
+.tab::-webkit-scrollbar {
   display: none;
 }
 

@@ -6,6 +6,10 @@
 
     text-decoration: none;
 
+    &-body {
+        width: 79%;
+    }
+
     &,
     &-title,
     &-text {
@@ -14,8 +18,6 @@
 
     &-title,
     &-text {
-        display: block;
-
         line-height: 1.5;
     }
 
