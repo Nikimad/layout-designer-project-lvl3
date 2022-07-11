@@ -63,15 +63,15 @@
   }
 
 div.tab
-unless page.isProfile
-  each users, letter in contacts
-    if page.isContacts
-      div.wrapper.mb-5
-          include letter.pug
-          each user in users
-            include contact.pug
-    else
-      each user in users
-        include contact.pug
-else
-  include profile.pug
+  unless page.isProfile
+    each users, letter in contacts
+      if page.isContacts
+        div.wrapper.mb-5
+            include letter.pug
+            each user in users
+              include contact.pug
+      else
+        each user in users
+          include contact.pug
+  else 
+    include profile-card.pug
