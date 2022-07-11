@@ -1,0 +1,42 @@
+@import './avatar';
+
+.contact {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    &,
+    &-title,
+    &-text {
+        transition: 0.3s;
+    }
+
+    &-title,
+    &-text {
+        display: block;
+
+        line-height: 1.5;
+    }
+
+    .contact-title {
+        color: $dark;
+    }
+
+    .contact-text {
+        color: $secondary;
+    }
+
+    &:hover {
+        background-color: $primary;
+        
+
+        .contact-title {
+            color: $light;
+        }
+
+        .contact-text {
+            color: $gray-400;
+        }
+    }
+}

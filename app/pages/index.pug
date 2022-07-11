@@ -6,10 +6,10 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Chat
         link(rel="stylesheet", href="styles/app.css")
-    body.bg-light
-        div.container-fluid.rounded.overflow-hidden.bg-white.m-4
+    body.vh-100.bg-light.p-4
+        div.container-xxxl.rounded.limit.overflow-hidden.bg-white
             div.row
-                include components/header/navbar.pug
-                include components/chat/chat.pug
+                include sections/navbar.pug
             div.row
-                include components/aside/aside.pug
+                include sections/aside.pug
+                include sections/chat.pug

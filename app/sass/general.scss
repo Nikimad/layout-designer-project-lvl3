@@ -1,3 +1,10 @@
+@import "./contact";
+@import "./contacts";
+
 .icon {
     filter: invert(1);
+}
+
+.limit {
+    max-height: calc(100vh - 3rem);
 }
