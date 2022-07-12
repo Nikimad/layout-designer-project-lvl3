@@ -114,5 +114,20 @@ $utilities: map-merge($utilities,
             null: $custom-radius
         )
       ),
-)
+      "position": (
+        responsive: true,
+        property: position,
+        values: static relative absolute fixed sticky
+      ),
+      "top": (
+        responsive: true,
+        property: top,
+        values: $position-values
+      ),
+      "bottom": (
+        responsive: true,
+        property: bottom,
+        values: $position-values
+      )
+  )
 )

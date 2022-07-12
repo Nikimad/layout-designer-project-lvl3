@@ -1,7 +1,7 @@
-a.contact.shadow-sm.ps-3.pe-5.py-4.mb-3(href="#") 
-  div.avatar-overlay.me-4
-    img.avatar(src=`/app/assets/${user.avatar}`)
-  div.contact-body
+a.contact.shadow-sm.ps-3.pe-4.py-4.mb-3(href="#") 
+  div.avatar-overlay
+    img.avatar(src=`./assets/${user.avatar}`)
+  div.contact-body.pe-xl-4.pe-3
     div.contact-header.d-flex
       strong.contact-title= user.name
       if page.isChat

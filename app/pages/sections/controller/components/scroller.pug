@@ -67,12 +67,12 @@ div.tab
     each users, letter in contacts
       if page.isContacts
         div.wrapper.mb-5
-            include letter.pug
+            include scroller-components/letter.pug
             each user in users
-              include contact.pug
+              include scroller-components/contact.pug
       else
         each user in users
-          include contact.pug
+          include scroller-components/contact.pug
   else 
-    include profile-card.pug
-    include profile-list.pug
+    include scroller-components/profile-card.pug
+    include scroller-components/profile-list.pug

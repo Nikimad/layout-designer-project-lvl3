@@ -1,6 +1,4 @@
-mixin formContent(name, placeholder)
-    h2.fw-bold.mb-4= name
-    input.form-control.shadow-none.border-0.border-bottom.p-4#search(type="text" placeholder=`Поиск по ${placeholder}`)
+include mixins/formContent-mixin.pug
 
 form.mb-5
     label.form-label.d-none(for="search")

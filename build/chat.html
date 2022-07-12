@@ -7,50 +7,52 @@
     <title>Chat</title>
     <link rel="stylesheet" href="styles/app.css">
   </head>
-  <body class="vh-100 bg-light p-4">
-    <div class="container-xxxl radius limit h-100 overflow-hidden bg-white">
-      <div class="row">
-        <nav class="col-xl-4 navbar navbar-expand navbar-dark bg-primary px-3 py-4">
-          <div class="container px-2"><img class="invert navbar-brand py-0 m-0" src="/app/assets/svg/logo.svg" height="24" alt="">
-            <div id="navbarNav">
+  <body class="vh-100 bg-light p-sm-4">
+    <div class="container-xxxl h-100">
+      <div class="row h-100 radius overflow-hidden bg-white">
+        <header class="col-xl-4 p-0">
+          <nav class="position-sm-static fixed-bottom w-100 order-md-first navbar navbar-expand navbar-dark bg-primary px-3 py-4">
+            <div class="container px-2"><img class="navbar-brand py-0 m-0" src="./assets/svg/logo.svg" height="24" alt="">
               <ul class="navbar-nav lh-1 gap-2">
-                <li class="nav-item"><a class="nav-link py-0" href="./index.html"><img class="invert me-2" src="/app/assets/svg/people.svg" height="24"><small>Контакты</small></a>
+                <li class="nav-item"><a class="nav-link py-0" href="./index.html"><img class="me-2" src="./assets/svg/people-white.svg"><small class="d-none d-lg-inline">Контакты</small></a>
                 </li>
-                <li class="nav-item"><a class="nav-link py-0 active" href="./chat.html"><img class="invert me-2" src="/app/assets/svg/chat.svg" height="24"><small>Сообщения</small></a>
+                <li class="nav-item"><a class="nav-link py-0 active" href="./chat.html"><img class="me-2" src="./assets/svg/chat.svg"><small class="d-none d-lg-inline">Сообщения</small></a>
                 </li>
-                <li class="nav-item"><a class="nav-link py-0" href="./profile.html"><img class="invert me-2" src="/app/assets/svg/person.svg" height="24"><small>Профиль</small></a>
+                <li class="nav-item"><a class="nav-link py-0" href="./profile.html"><img class="me-2" src="./assets/svg/person.svg"><small class="d-none d-lg-inline">Профиль</small></a>
                 </li>
               </ul>
             </div>
+          </nav>
+          <div class="pt-5 px-4">
+            <form class="mb-5">
+              <label class="form-label d-none" for="search"></label>
+                          <h2 class="fw-bold mb-4">Чаты</h2>
+                          <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
+            </form>
+            <div class="tab"><a class="contact shadow-sm ps-3 pe-4 py-4 mb-3" href="#"> 
+                <div class="avatar-overlay"><img class="avatar" src="./assets//images/avatar_4.jpg"></div>
+                <div class="contact-body pe-xl-4 pe-3">
+                  <div class="contact-header d-flex"><strong class="contact-title">Вениамин Редакторович</strong><small class="contact-text align-self-start ms-auto">11:45</small>
+                  </div><small class="d-block contact-text text-truncate">o_O</small>
+                </div></a><a class="contact shadow-sm ps-3 pe-4 py-4 mb-3" href="#"> 
+                <div class="avatar-overlay"><img class="avatar" src="./assets//images/avatar_2.jpg"></div>
+                <div class="contact-body pe-xl-4 pe-3">
+                  <div class="contact-header d-flex"><strong class="contact-title">Джедай Падаванов</strong><small class="contact-text align-self-start ms-auto">10:12</small>
+                  </div><small class="d-block contact-text text-truncate">Привет, скоро третий проект? Уже скоро надо будет выложить</small>
+                </div></a><a class="contact shadow-sm ps-3 pe-4 py-4 mb-3" href="#"> 
+                <div class="avatar-overlay"><img class="avatar" src="./assets//images/avatar_3.jpg"></div>
+                <div class="contact-body pe-xl-4 pe-3">
+                  <div class="contact-header d-flex"><strong class="contact-title">Алексей Примадонин</strong><small class="contact-text align-self-start ms-auto">08:53</small>
+                  </div><small class="d-block contact-text text-truncate">Тесты упали &gt;_&lt;</small>
+                </div></a>
+            </div>
           </div>
-        </nav>
-        <div class="chat col-8"></div>
-      </div>
-      <div class="row">
-        <aside class="aside col-xl-4 pt-5 px-4">
-          <form class="mb-5">
-            <label class="form-label d-none" for="search"></label>
-                      <h2 class="fw-bold mb-4">Чаты</h2>
-                      <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
-          </form>
-          <div class="tab"><a class="contact shadow-sm ps-3 pe-5 py-4 mb-3" href="#"> 
-              <div class="avatar-overlay me-4"><img class="avatar" src="/app/assets//images/avatar_4.jpg"></div>
-              <div class="contact-body">
-                <div class="contact-header d-flex"><strong class="contact-title">Вениамин Редакторович</strong><small class="contact-text align-self-start ms-auto">11:45</small>
-                </div><small class="d-block contact-text text-truncate">o_O</small>
-              </div></a><a class="contact shadow-sm ps-3 pe-5 py-4 mb-3" href="#"> 
-              <div class="avatar-overlay me-4"><img class="avatar" src="/app/assets//images/avatar_2.jpg"></div>
-              <div class="contact-body">
-                <div class="contact-header d-flex"><strong class="contact-title">Джедай Падаванов</strong><small class="contact-text align-self-start ms-auto">10:12</small>
-                </div><small class="d-block contact-text text-truncate">Привет, скоро третий проект? Уже скоро надо будет выложить</small>
-              </div></a><a class="contact shadow-sm ps-3 pe-5 py-4 mb-3" href="#"> 
-              <div class="avatar-overlay me-4"><img class="avatar" src="/app/assets//images/avatar_3.jpg"></div>
-              <div class="contact-body">
-                <div class="contact-header d-flex"><strong class="contact-title">Алексей Примадонин</strong><small class="contact-text align-self-start ms-auto">08:53</small>
-                </div><small class="d-block contact-text text-truncate">Тесты упали &gt;_&lt;</small>
-              </div></a>
+        </header>
+        <div class="d-flex col-8 justify-content-center align-items-center border-start">
+          <div class="d-none d-xl-flex flex-column align-items-center"><img class="rounded-circle mb-3" src="./assets/images/avatar_1.jpg" width="200" height="200">
+            <h6 class="lh-base text-center fw-bold m-0">Привет, Кодовёнок</h6><sub class="text-center text-muted">Выбери чат, чтобы начать общаться</sub>
           </div>
-        </aside>
+        </div>
       </div>
     </div>
   </body>

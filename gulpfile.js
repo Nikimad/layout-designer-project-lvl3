@@ -18,4 +18,10 @@ const buildPug = () => {
     .pipe(dest('build/'));
 }
 
-exports.build = parallel(buildSass, buildPug);
+const getAssets = () => {
+  console.log("Копирование дополнительных файлов");
+  return src('app/assets/**/*')
+    .pipe(dest('build/assets/'));
+}
+
+exports.build = parallel(buildSass, buildPug, getAssets);

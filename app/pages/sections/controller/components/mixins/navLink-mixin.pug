@@ -1,6 +1,6 @@
 mixin navLinkContent(icon, text)
-        img.invert.me-2(src=`/app/assets/svg/${icon}.svg` height="24")
-        small= text
+        img.me-2(src=`./assets/svg/${icon}.svg`)
+        small.d-none.d-lg-inline= text
 
 mixin navLink(active, path, icon, text)
     if active
