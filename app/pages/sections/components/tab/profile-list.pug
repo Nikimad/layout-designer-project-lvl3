@@ -1,2 +1,29 @@
-div.list-group
-    a.list-group-item
+-
+  var profileData = {
+        "Страна": {
+                data: "Москва, Россия",
+                icon: "/svg/globe.svg"
+            },
+
+            "Телефон": {
+                data: "+7 (499) 123-45-67",
+                icon: "/svg/telephone.svg"
+            },
+
+            "Email": {
+                data: "nikita.m@hexlet.io",
+                icon: "/svg/envelop.svg"
+            },
+
+            "Twitter": {
+                data: "@n_mikhaylov",
+                icon: "/svg/people.svg"
+            }
+    }
+div.list-group.px-3
+    each content, title in profileData
+        li.list-group-item.d-flex.align-itmes-center.justify-content-between.border-0.border-bottom
+            div.item-body
+                small.d-block.text-black-50= title
+                small= content.data
+            img.item-icon(src=`/app/assets${content.icon}`)

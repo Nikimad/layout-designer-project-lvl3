@@ -10983,6 +10983,15 @@ textarea.form-control-lg {
   color: #efefef;
 }
 
+.profile-card {
+  padding: 2.5rem 1rem;
+}
+.profile-card-img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0.5rem;
+}
+
 .tab {
   max-height: calc(100vh - 22rem);
 }
@@ -10996,7 +11005,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.icon {
+.invert {
   filter: invert(1);
 }
 
