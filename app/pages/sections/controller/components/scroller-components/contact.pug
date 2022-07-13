@@ -3,7 +3,7 @@ a.contact.d-flex.gap-4.align-items-center.justify-content-beetween.text-decorati
     img.avatar(src=`./assets/${user.avatar}`)
   div.contact-body.pe-xl-4.pe-3
     div.contact-header.d-flex
-      strong.contact-title.text-dark= user.name
+      h6.contact-title.text-dark.fw-bold.lh-base.m-0= user.name
       if page.isMessages
         small.lh-base.contact-text.text-secondary.align-self-start.ms-auto= user.time
     unless page.isMessages
