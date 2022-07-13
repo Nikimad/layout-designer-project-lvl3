@@ -10,13 +10,13 @@
   <body class="vh-100 bg-light p-sm-4">
     <div class="container-xxxl h-100">
       <div class="row h-100 radius overflow-hidden bg-white">
-        <header class="col-xl-4 p-0">
+        <header class="col-xl-4 h-100 p-0">
           <nav class="position-sm-static fixed-bottom w-100 order-md-first navbar navbar-expand navbar-dark bg-primary px-3 py-4">
             <div class="container px-2"><img class="navbar-brand py-0 m-0" src="./assets/svg/logo.svg" height="24" alt="">
-              <ul class="navbar-nav lh-1 gap-2">
+              <ul class="navbar-nav lh-1 gap-xl-2 gap-3">
                 <li class="nav-item"><a class="nav-link py-0" href="./index.html"><img class="me-2" src="./assets/svg/people-white.svg"><small class="d-none d-lg-inline">Контакты</small></a>
                 </li>
-                <li class="nav-item"><a class="nav-link py-0" href="./chat.html"><img class="me-2" src="./assets/svg/chat.svg"><small class="d-none d-lg-inline">Сообщения</small></a>
+                <li class="nav-item"><a class="nav-link py-0" href="./messages.html"><img class="me-2" src="./assets/svg/chat.svg"><small class="d-none d-lg-inline">Сообщения</small></a>
                 </li>
                 <li class="nav-item"><a class="nav-link py-0 active" href="./profile.html"><img class="me-2" src="./assets/svg/person.svg"><small class="d-none d-lg-inline">Профиль</small></a>
                 </li>
@@ -24,38 +24,42 @@
             </div>
           </nav>
           <div class="pt-5 px-4">
-            <form class="mb-5">
+            <form>
               <label class="form-label d-none" for="search"></label>
-                          <h2 class="fw-bold mb-4">Профиль</h2>
-                          <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
+                          <h2 class="fw-bold mb-4 pb-2">Профиль</h2>
+                          <input class="form-control shadow-none border-0 border-bottom px-4 py-2" id="search" type="text" placeholder="Поиск по сообщениям">
             </form>
             <div class="tab">
-              <div class="card profile-card border-0 mb-5 align-items-center"><img class="card-img-top profile-card-img rounded-circle" src="./assets/images/avatar_1.jpg">
-                <div class="card-body profile-card-body p-0">
-                  <h5 class="fw-bold text-center card-title mb-4">Кодовёнок Хекслетович</h5>
-                  <p class="text-center card-text"> Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
+              <div class="outer-wrapper mt-5">
+                <div class="card profile-card border-0 mb-5 align-items-center"><img class="card-img-top profile-card-img rounded-circle mb-3" src="./assets/images/avatar_1.jpg">
+                  <div class="card-body profile-card-body p-0">
+                    <h6 class="fw-bold text-center card-title mb-3">Кодовёнок Хекслетович</h6>
+                    <p class="text-center card-text"> Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
+                  </div>
                 </div>
-              </div>
-              <div class="list-group px-3">
-                <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom">
-                  <div class="item-body"><small class="d-block text-black-50">Страна</small><small>Москва, Россия</small></div><img class="item-icon" src="./assets/svg/globe.svg">
-                </li>
-                <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom">
-                  <div class="item-body"><small class="d-block text-black-50">Телефон</small><small>+7 (499) 123-45-67</small></div><img class="item-icon" src="./assets/svg/telephone.svg">
-                </li>
-                <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom">
-                  <div class="item-body"><small class="d-block text-black-50">Email</small><small>nikita.m@hexlet.io</small></div><img class="item-icon" src="./assets/svg/envelop.svg">
-                </li>
-                <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom">
-                  <div class="item-body"><small class="d-block text-black-50">Twitter</small><small>@n_mikhaylov</small></div><img class="item-icon" src="./assets/svg/people-sec.svg">
-                </li>
+                <div class="list-group p-4">
+                  <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom mb-1">
+                    <div class="item-body"><small class="d-block text-black-50">Страна</small><small>Москва, Россия</small></div><img class="item-icon" src="./assets/svg/globe.svg">
+                  </li>
+                  <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom mb-1">
+                    <div class="item-body"><small class="d-block text-black-50">Телефон</small><small>+7 (499) 123-45-67</small></div><img class="item-icon" src="./assets/svg/telephone.svg">
+                  </li>
+                  <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom mb-1">
+                    <div class="item-body"><small class="d-block text-black-50">Email</small><small>nikita.m@hexlet.io</small></div><img class="item-icon" src="./assets/svg/envelop.svg">
+                  </li>
+                  <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom mb-1">
+                    <div class="item-body"><small class="d-block text-black-50">Twitter</small><small>@n_mikhaylov</small></div><img class="item-icon" src="./assets/svg/people-sec.svg">
+                  </li>
+                </div>
               </div>
             </div>
           </div>
         </header>
-        <div class="d-flex col-8 justify-content-center align-items-center border-start">
-          <div class="d-none d-xl-flex flex-column align-items-center"><img class="rounded-circle mb-3" src="./assets/images/avatar_1.jpg" width="200" height="200">
-            <h6 class="lh-base text-center fw-bold m-0">Привет, Кодовёнок</h6><sub class="text-center text-muted">Выбери чат, чтобы начать общаться</sub>
+        <div class="col-8 border-start p-0" id="current-chat">
+          <div class="h-100 w-100 d-flex justify-content-center">
+            <div class="greetings d-none d-xl-flex flex-column align-items-center mb-3"><img class="rounded-circle mb-3" src="./assets/images/avatar_1.jpg" width="200" height="200">
+              <h6 class="lh-base text-center fw-bold m-2">Привет, Кодовёнок</h6><sub class="text-center text-muted">Выбери чат, чтобы начать общаться</sub>
+            </div>
           </div>
         </div>
       </div>

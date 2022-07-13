@@ -1,10 +1,10 @@
 include mixins/formContent-mixin.pug
 
-form.mb-5
+form
     label.form-label.d-none(for="search")
     if page.isContacts
         +formContent('Контакты', 'контактам')
-    if page.isChat
+    if page.isMessages
         +formContent('Чаты', 'сообщениям')
     if page.isProfile
         +formContent('Профиль', 'сообщениям')

@@ -63,16 +63,17 @@
   }
 
 div.tab
-  unless page.isProfile
-    each users, letter in contacts
-      if page.isContacts
-        div.wrapper.mb-5
-            include scroller-components/letter.pug
-            each user in users
-              include scroller-components/contact.pug
-      else
-        each user in users
-          include scroller-components/contact.pug
-  else 
-    include scroller-components/profile-card.pug
-    include scroller-components/profile-list.pug
+  div.outer-wrapper.mt-5
+    unless page.isProfile
+      each users, letter in contacts
+        if page.isContacts
+          div.inner-wrapper.mb-5
+              include scroller-components/letter.pug
+              each user in users
+                include scroller-components/contact.pug
+        else
+          each user in users
+            include scroller-components/contact.pug
+    else 
+      include scroller-components/profile-card.pug
+      include scroller-components/profile-list.pug

@@ -1,12 +1,6 @@
 @import './avatar';
 
 .contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    text-decoration: none;
-
     &-body {
         width: 79%;
     }
@@ -17,17 +11,8 @@
         transition: 0.3s;
     }
 
-    &-title,
-    &-text {
-        line-height: 1.5;
-    }
-
-    .contact-title {
-        color: $dark;
-    }
-
-    .contact-text {
-        color: $secondary;
+    &-title {
+        line-height: 1.2;
     }
 
     &:hover {

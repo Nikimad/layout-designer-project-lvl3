@@ -1,12 +1,12 @@
-a.contact.shadow-sm.ps-3.pe-4.py-4.mb-3(href="#") 
+a.contact.d-flex.gap-4.align-items-center.justify-content-beetween.text-decoration-none.shadow-sm.ps-3.pe-4.py-4.mb-3(href="#") 
   div.avatar-overlay
     img.avatar(src=`./assets/${user.avatar}`)
   div.contact-body.pe-xl-4.pe-3
     div.contact-header.d-flex
-      strong.contact-title= user.name
-      if page.isChat
-        small.contact-text.align-self-start.ms-auto= user.time
-    unless page.isChat
-      small.contact-text= user.status
+      strong.contact-title.text-dark= user.name
+      if page.isMessages
+        small.lh-base.contact-text.text-secondary.align-self-start.ms-auto= user.time
+    unless page.isMessages
+      small.lh-base.contact-text.text-secondary= user.status
     else
-      small.d-block.contact-text.text-truncate= user.message
+      small.lh-base.d-block.contact-text.text-secondary.text-truncate= user.message

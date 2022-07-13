@@ -1,4 +1,4 @@
-- const page = { isContacts: false, isChat: true, isProfile: false };
+- const page = { isContacts: false, isMessages: true, isProfile: false, isChat: true };
 doctype html
 html(lang="en")
     head
@@ -11,4 +11,4 @@ html(lang="en")
         div.container-xxxl.h-100
             div.row.h-100.radius.overflow-hidden.bg-white
                 include sections/controller/controller.pug
-                include sections/chat.pug
+                include sections/viewport.pug

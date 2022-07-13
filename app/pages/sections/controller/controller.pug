@@ -1,5 +1,12 @@
-header.col-xl-4.p-0
+header.col-xl-4.h-100.p-0
     include components/navbar.pug
-    div.pt-5.px-4
-        include components/search.pug
-        include components/scroller.pug
+    unless page.isChat
+        div.pt-5.px-4
+                include components/search.pug
+                include components/scroller.pug
+    else
+        div.pt-5.px-4.d-none.d-xl-block
+            include components/search.pug
+            include components/scroller.pug
+        div.d-xl-none
+            include ../viewport.pug

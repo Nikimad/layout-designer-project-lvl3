@@ -1,0 +1,7 @@
+div.col-8.border-start.p-0#current-chat
+    unless page.isChat
+        include components/greetings.pug
+    else
+        include chat/chat-header.pug
+        include chat/chat-tab.pug
+        include chat/input.pug

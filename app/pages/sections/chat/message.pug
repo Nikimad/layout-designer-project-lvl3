@@ -1,0 +1,23 @@
+mixin message(text, time, isInc)
+    div.message-body.border-bottom
+        if isInc
+            h6.mb-1 Вениамин Редакторович
+            p.text-secondary= text
+        else
+            p.text-white.mb-2= text
+    if isInc 
+        small.text-black-50= time
+    else
+        small.text-white-50= time
+
+mixin outcomingMessage(text, time)
+    div.message.d-flex.gap-3.align-self-end.mb-1
+        img.d-none.d-xl-block.rounded-circle.align-self-end(src="./assets/images/avatar_1.jpg" height="50")
+        div.bg-primary.radius.shadow-sm.p-4
+            +message(text, time, false)
+
+mixin incomingMessage(text, time)
+    div.message.d-flex.gap-3.mb-1
+        img.d-none.d-xl-blockrounded-circle.align-self-end(src="./assets/images/avatar_4.jpg" height="50")
+        div.bg-light.radius.shadow-sm.p-4
+            +message(text, time, true)
