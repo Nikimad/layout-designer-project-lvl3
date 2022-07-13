@@ -11603,12 +11603,6 @@ textarea.form-control-lg {
     max-height: calc(100vh - 3rem - 2.4rem - 4.5rem - 1px - 3rem);
   }
 }
-.greetings {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-55%);
-}
-
 .message {
   max-width: 39rem;
 }
