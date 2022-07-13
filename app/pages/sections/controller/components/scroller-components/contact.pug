@@ -5,8 +5,8 @@ a.contact.d-flex.gap-4.align-items-center.justify-content-beetween.text-decorati
     div.contact-header.d-flex
       h6.contact-title.text-dark.fw-bold.lh-base.m-0= user.name
       if page.isMessages
-        small.lh-base.contact-text.text-secondary.align-self-start.ms-auto= user.time
+        p.small.lh-base.contact-text.text-secondary.align-self-start.m-0.ms-auto= user.time
     unless page.isMessages
-      small.lh-base.contact-text.text-secondary= user.status
+      p.small.lh-base.contact-text.text-secondary.m-0= user.status
     else
-      small.lh-base.d-block.contact-text.text-secondary.text-truncate= user.message
+      p.small.lh-base.d-block.contact-text.text-secondary.text-truncate.m-0= user.message
