@@ -11544,35 +11544,43 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.avatar-overlay {
-  position: relative;
-  width: 50px;
-  height: 45px;
-}
-.avatar-overlay .avatar {
-  position: absolute;
-  top: -5px;
+.avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
 
-.contact-body {
-  width: 79%;
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-decoration: none;
 }
-.contact, .contact-title, .contact-text {
+.contact > * {
   transition: 0.3s;
 }
-.contact-title {
-  line-height: 1.2;
+.contact .contact-body {
+  width: 100%;
+  max-width: 70%;
+}
+.contact .title {
+  color: #343a40;
+  font-weight: 700;
+  margin: 0;
+}
+.contact .text {
+  font-size: 80%;
+  color: #6c757d;
+  line-height: 1.5;
+  margin: 0;
 }
 .contact:hover {
   background-color: #4545a5;
 }
-.contact:hover .contact-title {
+.contact:hover .title {
   color: #fbfbfb;
 }
-.contact:hover .contact-text {
+.contact:hover .text {
   color: #efefef;
 }
 
