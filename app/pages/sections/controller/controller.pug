@@ -1,11 +1,11 @@
 header.col-xl-4.h-100.p-0
     include components/navbar.pug
     unless page.isChat
-        div.pt-5.px-4
+        div.pt-5.px-2
                 include components/search.pug
                 include components/scroller.pug
     else
-        div.pt-5.px-4.d-none.d-xl-block
+        div.pt-5.px-2.d-none.d-xl-block
             include components/search.pug
             include components/scroller.pug
         div.d-xl-none
