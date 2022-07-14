@@ -11651,10 +11651,6 @@ textarea.form-control-lg {
   background-color: #efefef;
 }
 
-h2, .h2 {
-  font-size: 2rem;
-}
-
 @media screen and (max-width: 1200px) {
   #current-chat {
     width: 100%;
