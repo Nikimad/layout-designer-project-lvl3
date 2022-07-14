@@ -2,7 +2,7 @@
 
 .contact {
     display: flex;
-    gap: 1rem;
+    gap: 1.75rem;
 
     text-decoration: none;
 
@@ -11,6 +11,10 @@
     }
 
     .contact-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         width: 100%;
         max-width: 70%;
     }

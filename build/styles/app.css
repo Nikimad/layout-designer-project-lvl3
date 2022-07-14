@@ -11550,13 +11550,16 @@ textarea.form-control-lg {
 
 .contact {
   display: flex;
-  gap: 1rem;
+  gap: 1.75rem;
   text-decoration: none;
 }
 .contact > * {
   transition: 0.3s;
 }
 .contact .contact-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   max-width: 70%;
 }
