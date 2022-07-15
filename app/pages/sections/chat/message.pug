@@ -1,14 +1,14 @@
 mixin message(text, time, isInc)
-    div.message-body.border-bottom
+    div.message-body.border-bottom.mb-1
         if isInc
             h6.lh-base.fw-bold.mb-1 Вениамин Редакторович
             p.text-secondary.mb-2= text
         else
             p.text-white.mb-2= text
     if isInc 
-        small.text-black-50= time
+        p.small.text-secondary.m-0= time
     else
-        small.text-white-50= time
+        p.small.text-gray.m-0= time
 
 mixin outcomingMessage(text, time)
     div.message.d-flex.gap-3.align-self-end
