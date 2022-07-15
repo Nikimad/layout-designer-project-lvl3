@@ -19,5 +19,5 @@ mixin outcomingMessage(text, time)
 mixin incomingMessage(text, time)
     div.message.d-flex.gap-3
         img.d-none.d-xl-block.rounded-circle.align-self-end(src="./assets/images/avatar_4.jpg" height="45")
-        div.bg-light.radius.shadow-sm.p-4.pe-3
+        div.bg-light.radius.shadow-sm.p-4.pe-sm-4.pe-3
             +message(text, time, true)
