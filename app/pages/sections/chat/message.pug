@@ -1,8 +1,8 @@
 mixin message(text, time, isInc)
     div.message-body.border-bottom
         if isInc
-            h6.mb-1 Вениамин Редакторович
-            p.text-secondary= text
+            h6.lh-base.fw-bold.mb-1 Вениамин Редакторович
+            p.text-secondary.mb-2= text
         else
             p.text-white.mb-2= text
     if isInc 
