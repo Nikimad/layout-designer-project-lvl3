@@ -7,9 +7,9 @@
     <title>Chat</title>
     <link rel="stylesheet" href="styles/app.css">
   </head>
-  <body class="vh-100 bg-light p-sm-4">
+  <body class="body vh-100 p-sm-4">
     <div class="container-xxxl h-100">
-      <div class="row h-100 radius overflow-hidden bg-white">
+      <div class="row h-100 radius-sm overflow-hidden bg-white">
         <header class="col-xl-4 h-100 p-0">
           <div class="justify-content-between position-sm-static fixed-bottom w-100 order-md-first navbar navbar-expand navbar-dark bg-primary p-4"><img class="navbar-brand py-0 m-0" src="./assets/svg/logo.svg" height="24" alt="">
             <nav class="navbar-nav lh-1 gap-3"><a class="nav-link d-sm-none py-0" href="./chat.html"><img class="me-2" src="./assets/svg/chat-left-text.svg"><small class="d-none d-lg-inline">Чат</small></a><a class="nav-link py-0" href="./index.html"><img class="me-2" src="./assets/svg/people-white.svg"><small class="d-none d-lg-inline">Контакты</small></a><a class="nav-link py-0 active" href="./messages.html"><img class="me-2" src="./assets/svg/chat.svg"><small class="d-none d-lg-inline">Сообщения</small></a><a class="nav-link py-0" href="./profile.html"><img class="me-2" src="./assets/svg/person.svg"><small class="d-none d-lg-inline">Профиль</small></a>
@@ -49,9 +49,11 @@
           </div>
           <div class="d-xl-none">
             <div class="col-8 border-start p-0" id="current-chat">
-              <div class="chat-header d-flex gap-4 border-bottom px-3 py-4">
-                <div class="avatar-overlay"><img class="avatar" src="./assets/images/avatar_4.jpg" height="45"></div>
-                <div class="contact-body pe-xl-4 pe-3"><strong class="contact-title d-block text-dark">Вениамин Редакторович</strong><small class="lh-base contact-text text-secondary">Онлайн</small></div>
+              <div class="chat-header contact border-bottom px-3 p-4"><img class="avatar" src="./assets/images/avatar_4.jpg" height="45">
+                <div class="contact-body">
+                  <h6 class="title">Вениамин Редакторович</h6>
+                  <p class="text">Онлайн</p>
+                </div>
               </div>
               <div class="chat-tab d-flex flex-column gap-2 p-5">
                               <div class="message d-flex gap-3 mb-1"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_4.jpg" height="45">
@@ -101,9 +103,11 @@
           </div>
         </header>
         <div class="col-8 border-start p-0" id="current-chat">
-          <div class="chat-header d-flex gap-4 border-bottom px-3 py-4">
-            <div class="avatar-overlay"><img class="avatar" src="./assets/images/avatar_4.jpg" height="45"></div>
-            <div class="contact-body pe-xl-4 pe-3"><strong class="contact-title d-block text-dark">Вениамин Редакторович</strong><small class="lh-base contact-text text-secondary">Онлайн</small></div>
+          <div class="chat-header contact border-bottom px-3 p-4"><img class="avatar" src="./assets/images/avatar_4.jpg" height="45">
+            <div class="contact-body">
+              <h6 class="title">Вениамин Редакторович</h6>
+              <p class="text">Онлайн</p>
+            </div>
           </div>
           <div class="chat-tab d-flex flex-column gap-2 p-5">
                       <div class="message d-flex gap-3 mb-1"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_4.jpg" height="45">
