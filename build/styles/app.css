@@ -11558,11 +11558,12 @@ textarea.form-control-lg {
 }
 .contact .contact-body {
   width: 100%;
-  max-width: 70%;
+  max-width: 80%;
 }
 .contact .title {
   color: #343a40;
   font-weight: 700;
+  line-height: 1.5;
   margin: 0;
 }
 .contact .text {
