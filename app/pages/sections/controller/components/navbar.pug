@@ -1,16 +1,15 @@
 include mixins/navLink-mixin.pug
 
-nav.position-sm-static.fixed-bottom.w-100.order-md-first.navbar.navbar-expand.navbar-dark.bg-primary.px-3.py-4
-    div.container.px-2
-        img.navbar-brand.py-0.m-0(src="./assets/svg/logo.svg" height="24" alt="")
-        ul.navbar-nav.lh-1.gap-3
-            if page.isChat
-                li.nav-item.d-sm-none
-                    +navLink(page.isContacts, './chat.html', 'chat-left-text', 'Чат')
+div.justify-content-between.position-sm-static.fixed-bottom.w-100.order-md-first.navbar.navbar-expand.navbar-dark.bg-primary.p-4
+    img.navbar-brand.py-0.m-0(src="./assets/svg/logo.svg" height="24" alt="")
+    nav.navbar-nav.lh-1.gap-3
+        if page.isChat
+            a.nav-item.d-sm-none
+                +navLink(page.isContacts, './chat.html', 'chat-left-text', 'Чат')
 
-            li.nav-item
-                +navLink(page.isContacts, './index.html', 'people-white', 'Контакты')
-            li.nav-item
-                +navLink(page.isChat, './messages.html', 'chat', 'Сообщения')
-            li.nav-item
-                +navLink(page.isProfile, './profile.html', 'person', 'Профиль')
+        a.nav-item
+            +navLink(page.isContacts, './index.html', 'people-white', 'Контакты')
+        a.nav-item
+            +navLink(page.isChat, './messages.html', 'chat', 'Сообщения')
+        a.nav-item
+            +navLink(page.isProfile, './profile.html', 'person', 'Профиль')
