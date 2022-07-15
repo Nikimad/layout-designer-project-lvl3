@@ -4,12 +4,9 @@ div.justify-content-between.position-sm-static.fixed-bottom.w-100.order-md-first
     img.navbar-brand.py-0.m-0(src="./assets/svg/logo.svg" height="24" alt="")
     nav.navbar-nav.lh-1.gap-3
         if page.isChat
-            a.nav-item.d-sm-none
-                +navLink(page.isContacts, './chat.html', 'chat-left-text', 'Чат')
+            a.nav-link.d-sm-none.py-0(href= './chat.html')
+                +navLinkContent('chat-left-text', 'Чат')
 
-        a.nav-item
-            +navLink(page.isContacts, './index.html', 'people-white', 'Контакты')
-        a.nav-item
-            +navLink(page.isChat, './messages.html', 'chat', 'Сообщения')
-        a.nav-item
-            +navLink(page.isProfile, './profile.html', 'person', 'Профиль')
+        +navLink(page.isContacts, './index.html', 'people-white', 'Контакты')
+        +navLink(page.isChat, './messages.html', 'chat', 'Сообщения')
+        +navLink(page.isProfile, './profile.html', 'person', 'Профиль')

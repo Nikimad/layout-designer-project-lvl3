@@ -12,12 +12,12 @@ mixin message(text, time, isInc)
 
 mixin outcomingMessage(text, time)
     div.message.d-flex.gap-3.align-self-end.mb-1
-        img.d-none.d-xl-block.rounded-circle.align-self-end(src="./assets/images/avatar_1.jpg" height="50")
+        img.d-none.d-xl-block.rounded-circle.align-self-end(src="./assets/images/avatar_1.jpg" height="45")
         div.bg-primary.radius.shadow-sm.p-4
             +message(text, time, false)
 
 mixin incomingMessage(text, time)
     div.message.d-flex.gap-3.mb-1
-        img.d-none.d-xl-block.marounded-circle.align-self-end(src="./assets/images/avatar_4.jpg" height="50")
+        img.d-none.d-xl-block.rounded-circle.align-self-end(src="./assets/images/avatar_4.jpg" height="45")
         div.bg-light.radius.shadow-sm.p-4
             +message(text, time, true)
