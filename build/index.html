@@ -15,16 +15,13 @@
           <input class="d-none" type="radio" name="navigation" id="messages">
           <input class="d-none" type="radio" name="navigation" id="profile">
           <nav class="navbar navbar-expand order-last order-sm-first d-flex justify-content-between bg-primary px-3 py-4"> <img src="./assets/svg/logo.svg" height="24">
-            <ul class="navbar-nav flex-row flex-wrap justify-content-around gap-xl-3 gap-4">
-              <label class="nav-item px-2" for="contacts"><img src="./assets/svg/people-white.svg">
-                <p class="item-text d-xl-block">Контакты</p>
-              </label>
-              <label class="nav-item px-2" for="messages"><img src="./assets/svg/chat.svg">
-                <p class="item-text d-xl-block">Сообщения</p>
-              </label>
-              <label class="nav-item px-2" for="profile"><img src="./assets/svg/person.svg">
-                <p class="item-text d-xl-block">Профиль</p>
-              </label>
+            <ul class="nav navbar-nav flex-row flex-wrap justify-content-around gap-xl-3 gap-4">
+              <label for="contacts"><a class="nav-item px-2"><img src="./assets/svg/people-white.svg">
+                  <p class="item-text d-xl-block">Контакты</p></a></label>
+              <label for="messages"><a class="nav-item px-2"><img src="./assets/svg/chat.svg">
+                  <p class="item-text d-xl-block">Сообщения</p></a></label>
+              <label for="profile"><a class="nav-item px-2"><img src="./assets/svg/person.svg">
+                  <p class="item-text d-xl-block">Профиль</p></a></label>
             </ul>
           </nav>
                     <form class="form-search px-4 pt-5" data-form="contacts">

@@ -11393,7 +11393,7 @@ body {
   margin: 0;
 }
 
-#contacts:checked ~ .navbar .nav-item[for=contacts] .item-text {
+#contacts:checked ~ .navbar label[for=contacts] .nav-item .item-text {
   color: #fff;
 }
 
@@ -11402,7 +11402,7 @@ body {
   display: block;
 }
 
-#messages:checked ~ .navbar .nav-item[for=messages] .item-text {
+#messages:checked ~ .navbar label[for=messages] .nav-item .item-text {
   color: #fff;
 }
 
@@ -11411,7 +11411,7 @@ body {
   display: block;
 }
 
-#profile:checked ~ .navbar .nav-item[for=profile] .item-text {
+#profile:checked ~ .navbar label[for=profile] .nav-item .item-text {
   color: #fff;
 }
 

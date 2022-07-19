@@ -1,7 +1,7 @@
 $nav-items: 'contacts', 'messages', 'profile';
 
 @mixin choose($id) {
-    ##{$id}:checked ~ .navbar .nav-item[for=#{$id}] {
+    ##{$id}:checked ~ .navbar label[for=#{$id}] .nav-item {
         .item-text {
             color: $white;
         }
