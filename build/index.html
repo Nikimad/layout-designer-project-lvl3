@@ -14,16 +14,18 @@
           <input class="d-none" type="radio" name="navigation" id="contacts" checked>
           <input class="d-none" type="radio" name="navigation" id="messages">
           <input class="d-none" type="radio" name="navigation" id="profile">
-          <nav class="navbar navbar-expand order-last order-sm-first d-flex justify-content-between bg-primary px-3 py-4"> <img src="./assets/svg/logo.svg" height="24">
-            <ul class="nav navbar-nav flex-row flex-wrap justify-content-around gap-xl-3 gap-4">
-              <label for="contacts"><a class="nav-item px-2"><img src="./assets/svg/people-white.svg">
-                  <p class="item-text d-xl-block">Контакты</p></a></label>
-              <label for="messages"><a class="nav-item px-2"><img src="./assets/svg/chat.svg">
-                  <p class="item-text d-xl-block">Сообщения</p></a></label>
-              <label for="profile"><a class="nav-item px-2"><img src="./assets/svg/person.svg">
-                  <p class="item-text d-xl-block">Профиль</p></a></label>
-            </ul>
-          </nav>
+          <div class="navbar navbar-expand order-last order-sm-first d-flex justify-content-between bg-primary px-3 py-4"> <img src="./assets/svg/logo.svg" height="24">
+            <nav class="navbar-nav flex-row flex-wrap justify-content-around gap-xl-3 gap-4"><a class="nav-item px-2" href="#contacts">
+                <label class="d-flex gap-2" for="contacts"><img src="./assets/svg/people-white.svg">
+                  <p class="item-text d-xl-block">Контакты</p>
+                </label></a><a class="nav-item px-2" href="#chat">
+                <label class="d-flex gap-2" for="messages"><img src="./assets/svg/chat.svg">
+                  <p class="item-text d-xl-block">Сообщения</p>
+                </label><a class="nav-item px-2" href="#profile">
+                  <label class="d-flex gap-2" for="profile"><img src="./assets/svg/person.svg">
+                    <p class="item-text d-xl-block">Профиль</p>
+                  </label></a></a></nav>
+          </div>
                     <form class="form-search px-4 pt-5" data-form="contacts">
                       <label class="form-label d-none" for="search"></label>
                       <h2 class="fw-bold mb-4">Контакты</h2>

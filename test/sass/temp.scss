@@ -37,13 +37,6 @@ body {
 
     @include hide-scrollbar();
 }
-
-.nav-item {
-    display: flex;
-
-    gap: 0.5rem;
-}
-
 .contact {
     display: flex;
 
