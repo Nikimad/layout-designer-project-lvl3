@@ -11346,6 +11346,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+:root {
+  scroll-behavior: unset;
+}
+
 body {
   background-color: #efefef;
 }
@@ -11357,12 +11361,7 @@ body {
   margin: 0;
 }
 
-.form-search {
-  display: none;
-}
-
 .tab {
-  display: none;
   height: 100%;
 }
 .tab {

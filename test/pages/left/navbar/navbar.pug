@@ -1,19 +1,12 @@
-
-input.d-none(type="radio" name="navigation" id="contacts" checked)
-input.d-none(type="radio" name="navigation" id="messages")
-input.d-none(type="radio" name="navigation" id="profile")
 div.navbar.navbar-expand.order-last.order-sm-first.d-flex.justify-content-between.bg-primary.px-3.py-4 
     img(src='./assets/svg/logo.svg' height="24")
     nav.navbar-nav.flex-row.flex-wrap.justify-content-around.gap-xl-3.gap-4
-        a.nav-item.px-2(href="#contacts")
-            label.d-flex.gap-2(for="contacts")
-                img(src="./assets/svg/people-white.svg") 
-                p.item-text.d-xl-block Контакты
-        a.nav-item.px-2(href="#chat")
-            label.d-flex.gap-2(for="messages")
-                img(src="./assets/svg/chat.svg")
-                p.item-text.d-xl-block Сообщения
-            a.nav-item.px-2(href="#profile")
-                label.d-flex.gap-2(for="profile")
-                    img(src="./assets/svg/person.svg") 
-                    p.item-text.d-xl-block Профиль
+        a.nav-item.d-flex.gap-2.px-2(href="#contacts")
+            img(src="./assets/svg/people-white.svg") 
+            p.item-text.d-xl-block Контакты
+        a.nav-item.d-flex.gap-2.px-2(href="#chat")
+            img(src="./assets/svg/chat.svg")
+            p.item-text.d-xl-block Сообщения
+        a.nav-item.d-flex.gap-2.px-2(href="#profile")
+            img(src="./assets/svg/person.svg") 
+            p.item-text.d-xl-block Профиль
