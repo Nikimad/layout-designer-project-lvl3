@@ -1,0 +1,50 @@
+-
+    var contacts = {
+      "A": [{
+        name: "Алексей Примадонин",
+        status: "Онлайн",
+        avatar: "./assets/images/avatar_3.jpg"
+      }],
+
+      "В": [{
+        name: "Вениамин Редакторович",
+        status: "Онлайн",
+        avatar: "./assets/images/avatar_4.jpg"
+      }],
+
+      "Д": [{
+        name: "Джедай Падаванов",
+        status: "Был онлайн вчера",
+        avatar: "./assets/images/avatar_2.jpg"
+      }],
+
+      "К": [{
+        name: "Кодовёнок Хекслетович",
+        status: "Был онлайн 3 часа назад",
+        avatar: "./assets/images/avatar_1.jpg"
+      },
+      {
+        name: "Королева Верстальщина",
+        status: "Была онлайн вчера",
+        avatar: "./assets/images/avatar_5.jpg"
+      }],
+
+      "П": [{
+        name: "Питонист Джангович",
+        status: "Был онлайн вчера",
+        avatar: "./assets/images/avatar_6.jpg"
+      }],
+    }
+include ../form/form-mixin.pug
+include contacts/contact.pug
+mixin letter(letter)
+    p.text-uppercase.text-muted.mb-3= letter
+
++form('Контакты', 'контактам', 'contacts')
+div.tab.px-4
+    div.mt-5
+        each users, letter in contacts
+            div.mb-5
+                +letter(letter)
+                each user in users
+                    +contact(user.avatar, user.name, user.status)

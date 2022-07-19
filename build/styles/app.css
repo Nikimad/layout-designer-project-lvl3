@@ -7998,39 +7998,6 @@ textarea.form-control-lg {
   .d-sm-none {
     display: none !important;
   }
-  .position-sm-static {
-    position: static !important;
-  }
-  .position-sm-relative {
-    position: relative !important;
-  }
-  .position-sm-absolute {
-    position: absolute !important;
-  }
-  .position-sm-fixed {
-    position: fixed !important;
-  }
-  .position-sm-sticky {
-    position: sticky !important;
-  }
-  .top-sm-0 {
-    top: 0 !important;
-  }
-  .top-sm-50 {
-    top: 50% !important;
-  }
-  .top-sm-100 {
-    top: 100% !important;
-  }
-  .bottom-sm-0 {
-    bottom: 0 !important;
-  }
-  .bottom-sm-50 {
-    bottom: 50% !important;
-  }
-  .bottom-sm-100 {
-    bottom: 100% !important;
-  }
   .border-sm {
     border: 1px solid #efefef !important;
   }
@@ -8587,39 +8554,6 @@ textarea.form-control-lg {
   }
   .d-md-none {
     display: none !important;
-  }
-  .position-md-static {
-    position: static !important;
-  }
-  .position-md-relative {
-    position: relative !important;
-  }
-  .position-md-absolute {
-    position: absolute !important;
-  }
-  .position-md-fixed {
-    position: fixed !important;
-  }
-  .position-md-sticky {
-    position: sticky !important;
-  }
-  .top-md-0 {
-    top: 0 !important;
-  }
-  .top-md-50 {
-    top: 50% !important;
-  }
-  .top-md-100 {
-    top: 100% !important;
-  }
-  .bottom-md-0 {
-    bottom: 0 !important;
-  }
-  .bottom-md-50 {
-    bottom: 50% !important;
-  }
-  .bottom-md-100 {
-    bottom: 100% !important;
   }
   .border-md {
     border: 1px solid #efefef !important;
@@ -9178,39 +9112,6 @@ textarea.form-control-lg {
   .d-lg-none {
     display: none !important;
   }
-  .position-lg-static {
-    position: static !important;
-  }
-  .position-lg-relative {
-    position: relative !important;
-  }
-  .position-lg-absolute {
-    position: absolute !important;
-  }
-  .position-lg-fixed {
-    position: fixed !important;
-  }
-  .position-lg-sticky {
-    position: sticky !important;
-  }
-  .top-lg-0 {
-    top: 0 !important;
-  }
-  .top-lg-50 {
-    top: 50% !important;
-  }
-  .top-lg-100 {
-    top: 100% !important;
-  }
-  .bottom-lg-0 {
-    bottom: 0 !important;
-  }
-  .bottom-lg-50 {
-    bottom: 50% !important;
-  }
-  .bottom-lg-100 {
-    bottom: 100% !important;
-  }
   .border-lg {
     border: 1px solid #efefef !important;
   }
@@ -9767,39 +9668,6 @@ textarea.form-control-lg {
   }
   .d-xl-none {
     display: none !important;
-  }
-  .position-xl-static {
-    position: static !important;
-  }
-  .position-xl-relative {
-    position: relative !important;
-  }
-  .position-xl-absolute {
-    position: absolute !important;
-  }
-  .position-xl-fixed {
-    position: fixed !important;
-  }
-  .position-xl-sticky {
-    position: sticky !important;
-  }
-  .top-xl-0 {
-    top: 0 !important;
-  }
-  .top-xl-50 {
-    top: 50% !important;
-  }
-  .top-xl-100 {
-    top: 100% !important;
-  }
-  .bottom-xl-0 {
-    bottom: 0 !important;
-  }
-  .bottom-xl-50 {
-    bottom: 50% !important;
-  }
-  .bottom-xl-100 {
-    bottom: 100% !important;
   }
   .border-xl {
     border: 1px solid #efefef !important;
@@ -10358,39 +10226,6 @@ textarea.form-control-lg {
   .d-xxl-none {
     display: none !important;
   }
-  .position-xxl-static {
-    position: static !important;
-  }
-  .position-xxl-relative {
-    position: relative !important;
-  }
-  .position-xxl-absolute {
-    position: absolute !important;
-  }
-  .position-xxl-fixed {
-    position: fixed !important;
-  }
-  .position-xxl-sticky {
-    position: sticky !important;
-  }
-  .top-xxl-0 {
-    top: 0 !important;
-  }
-  .top-xxl-50 {
-    top: 50% !important;
-  }
-  .top-xxl-100 {
-    top: 100% !important;
-  }
-  .bottom-xxl-0 {
-    bottom: 0 !important;
-  }
-  .bottom-xxl-50 {
-    bottom: 50% !important;
-  }
-  .bottom-xxl-100 {
-    bottom: 100% !important;
-  }
   .border-xxl {
     border: 1px solid #efefef !important;
   }
@@ -10947,39 +10782,6 @@ textarea.form-control-lg {
   }
   .d-xxxl-none {
     display: none !important;
-  }
-  .position-xxxl-static {
-    position: static !important;
-  }
-  .position-xxxl-relative {
-    position: relative !important;
-  }
-  .position-xxxl-absolute {
-    position: absolute !important;
-  }
-  .position-xxxl-fixed {
-    position: fixed !important;
-  }
-  .position-xxxl-sticky {
-    position: sticky !important;
-  }
-  .top-xxxl-0 {
-    top: 0 !important;
-  }
-  .top-xxxl-50 {
-    top: 50% !important;
-  }
-  .top-xxxl-100 {
-    top: 100% !important;
-  }
-  .bottom-xxxl-0 {
-    bottom: 0 !important;
-  }
-  .bottom-xxxl-50 {
-    bottom: 50% !important;
-  }
-  .bottom-xxxl-100 {
-    bottom: 100% !important;
   }
   .border-xxxl {
     border: 1px solid #efefef !important;
@@ -11544,55 +11346,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.avatar {
-  border-radius: 50%;
+body {
+  background-color: #efefef;
 }
 
-.contact {
-  display: flex;
-  gap: 1.5rem;
-  text-decoration: none;
-}
-.contact > * {
+.item-text {
+  display: none;
+  color: #adb5bd;
   transition: 0.3s;
-}
-.contact .contact-body {
-  width: 100%;
-  max-width: 80%;
-}
-.contact .title {
-  color: #343a40;
-  font-weight: 700;
-  line-height: 1.5;
   margin: 0;
-}
-.contact .text {
-  font-size: 80%;
-  color: #6c757d;
-  line-height: 1.5;
-  margin: 0;
-}
-.contact:hover {
-  background-color: #4545a5;
-}
-.contact:hover .title {
-  color: #fbfbfb;
-}
-.contact:hover .text {
-  color: #efefef;
 }
 
-.profile-card {
-  padding: 2.5rem 1rem;
-}
-.profile-card-img {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 0.5rem;
+.form-search {
+  display: none;
 }
 
 .tab {
-  max-height: calc(100vh - 1.5rem - 4.5rem - 3rem - 2.4rem - 4.5rem - 1px - 1.5rem);
+  display: none;
+  height: 100%;
 }
 .tab {
   -ms-overflow-style: none;
@@ -11604,60 +11375,47 @@ textarea.form-control-lg {
   display: none;
 }
 
-@media screen and (max-width: 576px) {
-  .tab {
-    max-height: calc(100vh - 3rem - 2.4rem - 4.5rem - 1px - 3rem);
-  }
-}
-.message {
-  max-width: 39rem;
+.nav-item {
+  display: flex;
+  gap: 0.5rem;
 }
 
-.chat-tab {
-  max-height: calc(100vh - 12.5rem - 1.75rem);
+.contact {
+  display: flex;
+  gap: 1.5rem;
 }
-.chat-tab {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: auto;
-  overflow-x: hidden;
+.contact-body .title {
+  line-height: 1.5;
+  margin: 0;
 }
-.chat-tab::-webkit-scrollbar {
-  display: none;
-}
-
-@media screen and (max-width: 1200px) {
-  .chat-tab {
-    max-height: calc(100vh - 12.5rem - 6rem);
-  }
-}
-@media screen and (max-width: 576px) {
-  .chat-tab {
-    max-height: calc(100vh - 12.5rem - 2.5rem);
-  }
-}
-.send-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-.send-btn-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.contact-body .text {
+  line-height: 1.5;
+  margin: 0;
 }
 
-.text-gray {
-  color: #efefef;
+#contacts:checked ~ .navbar .nav-item[for=contacts] .item-text {
+  color: #fff;
 }
 
-.body {
-  background-color: #efefef;
+#contacts:checked ~ .form-search[data-form=contacts],
+#contacts:checked ~ .form-search[data-form=contacts] + .tab {
+  display: block;
 }
 
-@media screen and (max-width: 1200px) {
-  #current-chat {
-    width: 100%;
-  }
+#messages:checked ~ .navbar .nav-item[for=messages] .item-text {
+  color: #fff;
+}
+
+#messages:checked ~ .form-search[data-form=messages],
+#messages:checked ~ .form-search[data-form=messages] + .tab {
+  display: block;
+}
+
+#profile:checked ~ .navbar .nav-item[for=profile] .item-text {
+  color: #fff;
+}
+
+#profile:checked ~ .form-search[data-form=profile],
+#profile:checked ~ .form-search[data-form=profile] + .tab {
+  display: block;
 }

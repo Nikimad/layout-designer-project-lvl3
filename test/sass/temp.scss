@@ -1,0 +1,62 @@
+body {
+    background-color: #efefef;
+}
+
+@mixin hide-scrollbar() {
+    & {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .item-text {
+    display: none;
+    
+    color: $gray-500;
+
+    transition: 0.3s;
+
+    margin: 0;
+}
+
+.form-search {
+    display: none;
+}
+
+.tab {
+    display: none;
+
+    height: 100%;
+
+    @include hide-scrollbar();
+}
+
+.nav-item {
+    display: flex;
+
+    gap: 0.5rem;
+}
+
+.contact {
+    display: flex;
+
+    gap: 1.5rem;
+
+    &-body {
+        .title {
+            line-height: 1.5;
+            margin: 0;
+        }
+        .text {
+            line-height: 1.5;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+mixin form(name, placeholder, id)
+        form.form-search.px-4.pt-5(data-form= `${id}`)
+            label.form-label.d-none(for="search")
+            h2.fw-bold.mb-4= name
+            input.form-control.shadow-none.border-0.border-bottom.p-4#search(type="text" placeholder=`Поиск по ${placeholder}`)
