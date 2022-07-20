@@ -1,6 +1,5 @@
 map.merge {
-  $utilities:
-  (
+  $utilities: (
     "border": (
       property: border,
       responsive: true,
@@ -115,5 +114,5 @@ map.merge {
         null: $custom-radius,
       ),
     ),
-  )
+  );
 }
