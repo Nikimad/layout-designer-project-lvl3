@@ -11406,6 +11406,10 @@ body {
   z-index: 1020;
 }
 
+.message {
+  max-width: 39rem;
+}
+
 .tab-hidden:target {
   display: block;
   width: 100%;

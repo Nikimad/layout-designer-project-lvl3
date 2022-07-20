@@ -22,9 +22,9 @@
     }
 include ../form/form-mixin.pug
 
-div.tab.tab-hidden.px-4#profile
+div.tab.tab-hidden#profile
     +form('Профиль', 'сообщениям')
-    div.mt-5
+    div.mt-5.px-4
         div.card.profile-card.border-0.mb-5.align-items-center.py-4.px-3
             img.profile-card-img.rounded-circle.my-3(src="./assets/images/avatar_1.jpg" height="90")
             div.card-body.profile-card-body.p-0

@@ -23,8 +23,8 @@
 include ../form/form-mixin.pug
 include messages/message.pug
 
-div.tab.px-4#chats
+div.tab#chats
     +form('Чаты', 'сообщениям')
-    div.mt-5
+    div.mt-5.px-4
         each user in contacts
             +message(user.avatar, user.name, user.time, user.message)
