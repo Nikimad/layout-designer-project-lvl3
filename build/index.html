@@ -7,9 +7,9 @@
     <title>Chat</title>
     <link rel="stylesheet" href="styles/app.css">
   </head>
-  <body class="body vh-100 overflow-hidden">
-    <div class="container-xxxl h-100 p-sm-4" id="contacts">
-      <div class="row radius-sm overflow-hidden h-100 bg-white">
+  <body class="body vh-100 p-sm-4">
+    <div class="container-xxxl radius-sm overflow-hidden h-100">
+      <div class="row h-100 bg-white">
         <div class="col col-xl-4 d-flex flex-column h-100 px-0">
           <div class="navbar navbar-expand order-last order-sm-first d-flex justify-content-between bg-primary px-3 py-4"> <img src="./assets/svg/logo.svg" height="24">
             <nav class="navbar-nav flex-row flex-wrap justify-content-around gap-xl-3 gap-4"><a class="nav-item d-flex gap-2 px-2" href="#contacts"><img src="./assets/svg/people-white.svg">
@@ -17,12 +17,12 @@
                 <p class="item-text d-xl-block">Сообщения</p></a><a class="nav-item d-flex gap-2 px-2" href="#profile"><img src="./assets/svg/person.svg">
                 <p class="item-text d-xl-block">Профиль</p></a></nav>
           </div>
-                    <form class="form-search px-4 pt-5" data-form="contacts">
-                      <label class="form-label d-none" for="search"></label>
-                      <h2 class="fw-bold mb-4">Контакты</h2>
-                      <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по контактам">
-                    </form>
-          <div class="tab px-4">
+          <div class="tab px-4" id="contacts">
+                      <form class="form-search px-4 pt-5">
+                        <label class="form-label d-none" for="search"></label>
+                        <h2 class="fw-bold mb-4">Контакты</h2>
+                        <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по контактам">
+                      </form>
             <div class="mt-5">
               <div class="mb-5">
                           <p class="text-uppercase text-muted mb-3">A</p>
@@ -77,30 +77,12 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col d-none d-xl-block border-start p-0">
-          <div class="h-100 d-flex flex-column justify-content-center align-items-center"><img class="rounded-circle mb-3" src="./assets/images/avatar_1.jpg" width="200" height="200">
-            <h6 class="lh-base fw-bold m-0">Привет, Кодовёнок</h6>
-            <p class="small text-muted m-0">Выбери чат, чтобы начать общаться</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-xxxl h-100 p-sm-4" id="chat">
-      <div class="row radius-sm overflow-hidden h-100 bg-white">
-        <div class="col col-xl-4 d-flex flex-column h-100 px-0">
-          <div class="navbar navbar-expand order-last order-sm-first d-flex justify-content-between bg-primary px-3 py-4"> <img src="./assets/svg/logo.svg" height="24">
-            <nav class="navbar-nav flex-row flex-wrap justify-content-around gap-xl-3 gap-4"><a class="nav-item d-flex gap-2 px-2" href="#contacts"><img src="./assets/svg/people-white.svg">
-                <p class="item-text d-xl-block">Контакты</p></a><a class="nav-item d-flex gap-2 px-2" href="#chat"><img src="./assets/svg/chat.svg">
-                <p class="item-text d-xl-block">Сообщения</p></a><a class="nav-item d-flex gap-2 px-2" href="#profile"><img src="./assets/svg/person.svg">
-                <p class="item-text d-xl-block">Профиль</p></a></nav>
-          </div>
-                    <form class="form-search px-4 pt-5" data-form="messages">
-                      <label class="form-label d-none" for="search"></label>
-                      <h2 class="fw-bold mb-4">Чаты</h2>
-                      <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
-                    </form>
-          <div class="tab px-4">
+          <div class="tab px-4" id="chat">
+                      <form class="form-search px-4 pt-5">
+                        <label class="form-label d-none" for="search"></label>
+                        <h2 class="fw-bold mb-4">Чаты</h2>
+                        <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
+                      </form>
             <div class="mt-5">
                         <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_4.jpg" height="45" width="45">
                           <div class="contact-body position-relative w-100 overflow-hidden pe-3">
@@ -125,30 +107,12 @@
                         </div>
             </div>
           </div>
-        </div>
-        <div class="col d-none d-xl-block border-start p-0">
-          <div class="h-100 d-flex flex-column justify-content-center align-items-center"><img class="rounded-circle mb-3" src="./assets/images/avatar_1.jpg" width="200" height="200">
-            <h6 class="lh-base fw-bold m-0">Привет, Кодовёнок</h6>
-            <p class="small text-muted m-0">Выбери чат, чтобы начать общаться</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-xxxl h-100 p-sm-4" id="profile">
-      <div class="row radius-sm overflow-hidden h-100 bg-white">
-        <div class="col col-xl-4 d-flex flex-column h-100 px-0">
-          <div class="navbar navbar-expand order-last order-sm-first d-flex justify-content-between bg-primary px-3 py-4"> <img src="./assets/svg/logo.svg" height="24">
-            <nav class="navbar-nav flex-row flex-wrap justify-content-around gap-xl-3 gap-4"><a class="nav-item d-flex gap-2 px-2" href="#contacts"><img src="./assets/svg/people-white.svg">
-                <p class="item-text d-xl-block">Контакты</p></a><a class="nav-item d-flex gap-2 px-2" href="#chat"><img src="./assets/svg/chat.svg">
-                <p class="item-text d-xl-block">Сообщения</p></a><a class="nav-item d-flex gap-2 px-2" href="#profile"><img src="./assets/svg/person.svg">
-                <p class="item-text d-xl-block">Профиль</p></a></nav>
-          </div>
-                    <form class="form-search px-4 pt-5" data-form="profile">
-                      <label class="form-label d-none" for="search"></label>
-                      <h2 class="fw-bold mb-4">Профиль</h2>
-                      <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
-                    </form>
-          <div class="tab px-4">
+          <div class="tab px-4" id="profile">
+                      <form class="form-search px-4 pt-5">
+                        <label class="form-label d-none" for="search"></label>
+                        <h2 class="fw-bold mb-4">Профиль</h2>
+                        <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
+                      </form>
             <div class="mt-5">
               <div class="card profile-card border-0 mb-5 align-items-center"><img class="profile-card-img rounded-circle mb-3" src="./assets/images/avatar_1.jpg" height="90">
                 <div class="card-body profile-card-body p-0">

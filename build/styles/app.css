@@ -11346,10 +11346,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-:root {
-  scroll-behavior: unset;
-}
-
 body {
   background-color: #efefef;
 }
@@ -11362,6 +11358,7 @@ body {
 }
 
 .tab {
+  display: none;
   height: 100%;
 }
 .tab {
@@ -11387,29 +11384,13 @@ body {
   margin: 0;
 }
 
-#contacts:checked ~ .navbar label[for=contacts] .item-text {
+.nav-item:hover {
+  text-decoration: none;
+}
+.nav-item:hover .item-text {
   color: #fff;
 }
 
-#contacts:checked ~ .form-search[data-form=contacts],
-#contacts:checked ~ .form-search[data-form=contacts] + .tab {
-  display: block;
-}
-
-#messages:checked ~ .navbar label[for=messages] .item-text {
-  color: #fff;
-}
-
-#messages:checked ~ .form-search[data-form=messages],
-#messages:checked ~ .form-search[data-form=messages] + .tab {
-  display: block;
-}
-
-#profile:checked ~ .navbar label[for=profile] .item-text {
-  color: #fff;
-}
-
-#profile:checked ~ .form-search[data-form=profile],
-#profile:checked ~ .form-search[data-form=profile] + .tab {
+.tab:target {
   display: block;
 }

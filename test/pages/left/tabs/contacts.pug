@@ -40,11 +40,11 @@ include contacts/contact.pug
 mixin letter(letter)
     p.text-uppercase.text-muted.mb-3= letter
 
-+form('Контакты', 'контактам', 'contacts')
-div.tab.px-4
-    div.mt-5
-        each users, letter in contacts
-            div.mb-5
-                +letter(letter)
-                each user in users
-                    +contact(user.avatar, user.name, user.status)
+div.tab.px-4#contacts
+  +form('Контакты', 'контактам')
+  div.mt-5
+    each users, letter in contacts
+      div.mb-5
+        +letter(letter)
+        each user in users
+          +contact(user.avatar, user.name, user.status)

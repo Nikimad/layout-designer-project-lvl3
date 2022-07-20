@@ -22,8 +22,8 @@
     }
 include ../form/form-mixin.pug
 
-+form('Профиль', 'сообщениям', 'profile')
-div.tab.px-4
+div.tab.px-4#profile
+    +form('Профиль', 'сообщениям')
     div.mt-5
         div.card.profile-card.border-0.mb-5.align-items-center
             img.profile-card-img.rounded-circle.mb-3(src="./assets/images/avatar_1.jpg" height="90")

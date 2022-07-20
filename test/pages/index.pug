@@ -6,16 +6,8 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Chat
         link(rel="stylesheet", href="styles/app.css")
-    body.body.vh-100.overflow-hidden
-        div.container-xxxl.h-100.p-sm-4#contacts
-            div.row.radius-sm.overflow-hidden.h-100.bg-white
-                include left/contacts-window.pug
-                include right/col.pug
-        div.container-xxxl.h-100.p-sm-4#chat
-            div.row.radius-sm.overflow-hidden.h-100.bg-white
-                include left/messages-window.pug
-                include right/col.pug
-        div.container-xxxl.h-100.p-sm-4#profile
-            div.row.radius-sm.overflow-hidden.h-100.bg-white
-                include left/profile-window.pug
+    body.body.vh-100.p-sm-4
+        div.container-xxxl.radius-sm.overflow-hidden.h-100
+            div.row.h-100.bg-white
+                include left/col.pug
                 include right/col.pug
