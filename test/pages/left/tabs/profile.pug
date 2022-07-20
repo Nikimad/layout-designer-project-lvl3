@@ -22,14 +22,14 @@
     }
 include ../form/form-mixin.pug
 
-div.tab.px-4#profile
+div.tab.tab-hidden.px-4#profile
     +form('Профиль', 'сообщениям')
     div.mt-5
-        div.card.profile-card.border-0.mb-5.align-items-center
-            img.profile-card-img.rounded-circle.mb-3(src="./assets/images/avatar_1.jpg" height="90")
+        div.card.profile-card.border-0.mb-5.align-items-center.py-4.px-3
+            img.profile-card-img.rounded-circle.my-3(src="./assets/images/avatar_1.jpg" height="90")
             div.card-body.profile-card-body.p-0
-                h6.fw-bold.text-center.card-title.mb-3 Кодовёнок Хекслетович
-                p.text-center.card-text  Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+                h6.fw-bold.text-center.card-title.m-0 Кодовёнок Хекслетович
+                p.text-center.card-text.my-3  Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
         div.list-group.px-3
             each content, title in profileData
                 li.list-group-item.d-flex.align-itmes-center.justify-content-between.border-0.border-bottom

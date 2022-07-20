@@ -28,12 +28,17 @@ body {
 
 
 .tab {
-    display: none;
-    
+    position: relative;
+
     height: 100%;
 
     @include hide-scrollbar();
 }
+
+.tab-hidden {
+    display: none;
+}
+
 
 .contact {
     display: flex;
