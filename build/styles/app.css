@@ -11350,11 +11350,25 @@ body {
   background-color: #efefef;
 }
 
+.tab-hidden {
+  display: none;
+}
+
+.tab-hidden:target {
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
 .item-text {
   display: none;
+  margin: 0;
   color: #fff;
   transition: 0.3s;
-  margin: 0;
 }
 
 .tab {
@@ -11364,14 +11378,10 @@ body {
 .tab {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 .tab::-webkit-scrollbar {
-  display: none;
-}
-
-.tab-hidden {
   display: none;
 }
 
@@ -11380,12 +11390,12 @@ body {
   gap: 1.5rem;
 }
 .contact-body .title {
-  line-height: 1.5;
   margin: 0;
+  line-height: 1.5;
 }
 .contact-body .text {
-  line-height: 1.5;
   margin: 0;
+  line-height: 1.5;
 }
 
 .send-btn {
@@ -11408,14 +11418,4 @@ body {
 
 .message {
   max-width: 39rem;
-}
-
-.tab-hidden:target {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  top: 0;
-  left: 0;
-  z-index: 1000;
 }
