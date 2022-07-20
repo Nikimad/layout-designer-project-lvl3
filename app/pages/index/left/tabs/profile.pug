@@ -1,0 +1,39 @@
+-
+  var profileData = {
+        "Страна": {
+                data: "Москва, Россия",
+                icon: "/svg/globe.svg"
+            },
+
+            "Телефон": {
+                data: "+7 (499) 123-45-67",
+                icon: "/svg/telephone.svg"
+            },
+
+            "Email": {
+                data: "nikita.m@hexlet.io",
+                icon: "/svg/envelop.svg"
+            },
+
+            "Twitter": {
+                data: "@n_mikhaylov",
+                icon: "/svg/people-sec.svg"
+            }
+    }
+include ../form/form-mixin.pug
+
+div.tab.tab-hidden#profile
+    +form('Профиль', 'сообщениям')
+    div.mt-5.px-4
+        div.card.profile-card.border-0.mb-5.align-items-center.py-4.px-3
+            img.profile-card-img.rounded-circle.my-3(src="./assets/images/avatar_1.jpg" height="90")
+            div.card-body.profile-card-body.p-0
+                h6.fw-bold.text-center.card-title.m-0 Кодовёнок Хекслетович
+                p.text-center.card-text.my-3  Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+        div.list-group.px-3
+            each content, title in profileData
+                li.list-group-item.d-flex.align-itmes-center.justify-content-between.border-0.border-bottom
+                    div.item-body
+                        p.small.d-block.text-black-50.m-0= title
+                        p.small.m-0= content.data
+                    img.item-icon(src=`./assets${content.icon}`)

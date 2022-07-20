@@ -1,0 +1,21 @@
+include messages.pug
+
+div.contact.border-bottom.p-4
+  img.rounded-circle(src=`./assets/images/avatar_4.jpg` height="50")
+  div.contact-body
+      h6.title Вениамин Редакторович
+      p.small.text-muted.text Онлайн
+div.tab.px-5#current-chat
+    div.d-flex.flex-column.gap-3.mt-5
+        +incomingMessage("Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?",
+        "8 минут назад")
+        +outcomingMessage("Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
+        "5 минут назад")
+        +incomingMessage("Лады", "5 минут назад")
+        +outcomingMessage("А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
+        "3 минуты назад")
+        +incomingMessage("о_О", "Только что")
+form.position-relative.mx-xl-5
+    input.form-control.shadow-none.border-0.border-top.p-4(type="text" placeholder="Напишите сообщение...")
+    button.send-btn.btn.btn-primary.rounded-circle.p-xl-4(type="submit" style="padding: 1.25rem")
+        img.send-btn-img(src="./assets/svg/cursor.svg")

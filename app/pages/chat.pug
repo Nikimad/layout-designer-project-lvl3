@@ -1,6 +1,5 @@
-- const page = { isContacts: false, isMessages: true, isProfile: false, isChat: true };
 doctype html
-html(lang="en")
+html(lang="ru")
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -8,7 +7,7 @@ html(lang="en")
         title Chat
         link(rel="stylesheet", href="styles/app.css")
     body.body.vh-100.p-sm-4
-        div.container-xxxl.h-100
-            div.row.h-100.radius-sm.overflow-hidden.bg-white
-                include sections/controller/controller.pug
-                include sections/viewport.pug
+        div.container-xxxl.radius-sm.overflow-hidden.h-100
+            div.row.h-100.bg-white
+                include chat/left/col.pug
+                include chat/right/col.pug

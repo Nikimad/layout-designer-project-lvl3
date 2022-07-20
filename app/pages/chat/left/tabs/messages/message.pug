@@ -1,0 +1,7 @@
+mixin message(avatar, name, time, message)
+    div.contact.shadow-sm.p-4.mb-3
+        img.rounded-circle(src=`${avatar}` height="45" width="45")
+        div.contact-body.position-relative.w-100.overflow-hidden.pe-3
+            h6.title= name
+            p.small.text-muted.position-absolute.top-0.end-0.text= time
+            p.small.text-muted.text-truncate.text= message

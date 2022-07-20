@@ -5,7 +5,7 @@ const pug = require('gulp-pug');
 const buildSass = () => {
   console.log('Компиляция SASS');
 
-  return src('test/sass/app.scss')
+  return src('app/sass/app.scss')
     .pipe(sass())
     .pipe(dest('build/styles/'));
 }
@@ -13,14 +13,14 @@ const buildSass = () => {
 const buildPug = () => {
   console.log('Компиляция Pug');
 
-  return src('test/pages/*.pug')
+  return src('app/pages/*.pug')
     .pipe(pug({ pretty: true }))
     .pipe(dest('build/'));
 }
 
 const getAssets = () => {
   console.log("Копирование дополнительных файлов");
-  return src('test/assets/**/*')
+  return src('app/assets/**/*')
     .pipe(dest('build/assets/'));
 }
 

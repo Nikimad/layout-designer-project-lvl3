@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styles/app.css">
+  </head>
+  <body class="body vh-100 p-sm-4">
+    <div class="container-xxxl radius-sm overflow-hidden h-100">
+      <div class="row h-100 bg-white">
+        <div class="col col-xl-4 d-flex flex-column h-100 px-0">
+          <div class="navbar navbar-expand order-last order-sm-first d-flex justify-content-between bg-primary px-3 py-4"> <img src="./assets/svg/logo.svg" height="24">
+            <nav class="navbar-nav flex-row flex-wrap justify-content-around gap-xl-3 gap-4"><a class="nav-item d-lg-none px-2" href="#current-chat"><img src="./assets/svg/chat-left-text.svg"></a><a class="nav-item d-flex gap-2 px-2" href="#contacts"><img src="./assets/svg/people-white.svg">
+                <p class="item-text d-xl-block">Контакты</p></a><a class="nav-item d-flex gap-2 px-2" href="#chats"><img src="./assets/svg/chat.svg">
+                <p class="item-text d-xl-block">Сообщения</p></a><a class="nav-item d-flex gap-2 px-2" href="#profile"><img src="./assets/svg/person.svg">
+                <p class="item-text d-xl-block">Профиль</p></a></nav>
+          </div>
+          <div class="position-relative overflow-hidden h-100">
+            <div class="tab tab-hidden px-4" id="contacts">
+                          <form class="form-search sticky-top bg-white px-4 pt-5">
+                            <label class="form-label d-none" for="search"></label>
+                            <h2 class="fw-bold mb-4">Контакты</h2>
+                            <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по контактам">
+                          </form>
+              <div class="mt-5">
+                <div class="mb-5">
+                              <p class="text-uppercase text-muted mb-3">A</p>
+                              <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_3.jpg" height="45" width="45">
+                                <div class="contact-body">
+                                  <h6 class="title">Алексей Примадонин</h6>
+                                  <p class="small text-muted text">Онлайн</p>
+                                </div>
+                              </div>
+                </div>
+                <div class="mb-5">
+                              <p class="text-uppercase text-muted mb-3">В</p>
+                              <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_4.jpg" height="45" width="45">
+                                <div class="contact-body">
+                                  <h6 class="title">Вениамин Редакторович</h6>
+                                  <p class="small text-muted text">Онлайн</p>
+                                </div>
+                              </div>
+                </div>
+                <div class="mb-5">
+                              <p class="text-uppercase text-muted mb-3">Д</p>
+                              <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_2.jpg" height="45" width="45">
+                                <div class="contact-body">
+                                  <h6 class="title">Джедай Падаванов</h6>
+                                  <p class="small text-muted text">Был онлайн вчера</p>
+                                </div>
+                              </div>
+                </div>
+                <div class="mb-5">
+                              <p class="text-uppercase text-muted mb-3">К</p>
+                              <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_1.jpg" height="45" width="45">
+                                <div class="contact-body">
+                                  <h6 class="title">Кодовёнок Хекслетович</h6>
+                                  <p class="small text-muted text">Был онлайн 3 часа назад</p>
+                                </div>
+                              </div>
+                              <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_5.jpg" height="45" width="45">
+                                <div class="contact-body">
+                                  <h6 class="title">Королева Верстальщина</h6>
+                                  <p class="small text-muted text">Была онлайн вчера</p>
+                                </div>
+                              </div>
+                </div>
+                <div class="mb-5">
+                              <p class="text-uppercase text-muted mb-3">П</p>
+                              <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_6.jpg" height="45" width="45">
+                                <div class="contact-body">
+                                  <h6 class="title">Питонист Джангович</h6>
+                                  <p class="small text-muted text">Был онлайн вчера</p>
+                                </div>
+                              </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab px-4" id="chats">
+                          <form class="form-search sticky-top bg-white px-4 pt-5">
+                            <label class="form-label d-none" for="search"></label>
+                            <h2 class="fw-bold mb-4">Чаты</h2>
+                            <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
+                          </form>
+              <div class="mt-5">
+                            <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_4.jpg" height="45" width="45">
+                              <div class="contact-body position-relative w-100 overflow-hidden pe-3">
+                                <h6 class="title">Вениамин Редакторович </h6>
+                                <p class="small text-muted position-absolute top-0 end-0 text">11:45</p>
+                                <p class="small text-muted text-truncate text">o_O</p>
+                              </div>
+                            </div>
+                            <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_2.jpg" height="45" width="45">
+                              <div class="contact-body position-relative w-100 overflow-hidden pe-3">
+                                <h6 class="title">Джедай Падаванов </h6>
+                                <p class="small text-muted position-absolute top-0 end-0 text">10:12</p>
+                                <p class="small text-muted text-truncate text">Привет, скоро третий проект? Уже скоро надо будет выложить</p>
+                              </div>
+                            </div>
+                            <div class="contact shadow-sm p-4 mb-3"><img class="rounded-circle" src="./assets/images/avatar_3.jpg" height="45" width="45">
+                              <div class="contact-body position-relative w-100 overflow-hidden pe-3">
+                                <h6 class="title">Алексей Примадонин </h6>
+                                <p class="small text-muted position-absolute top-0 end-0 text">08:53</p>
+                                <p class="small text-muted text-truncate text">Тесты упали &gt;_&lt;</p>
+                              </div>
+                            </div>
+              </div>
+            </div>
+            <div class="tab tab-hidden px-4" id="profile">
+                          <form class="form-search sticky-top bg-white px-4 pt-5">
+                            <label class="form-label d-none" for="search"></label>
+                            <h2 class="fw-bold mb-4">Профиль</h2>
+                            <input class="form-control shadow-none border-0 border-bottom p-4" id="search" type="text" placeholder="Поиск по сообщениям">
+                          </form>
+              <div class="mt-5">
+                <div class="card profile-card border-0 mb-5 align-items-center py-4 px-3"><img class="profile-card-img rounded-circle my-3" src="./assets/images/avatar_1.jpg" height="90">
+                  <div class="card-body profile-card-body p-0">
+                    <h6 class="fw-bold text-center card-title m-0">Кодовёнок Хекслетович</h6>
+                    <p class="text-center card-text my-3"> Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
+                  </div>
+                </div>
+                <div class="list-group px-3">
+                  <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom">
+                    <div class="item-body">
+                      <p class="small d-block text-black-50 m-0">Страна</p>
+                      <p class="small m-0">Москва, Россия</p>
+                    </div><img class="item-icon" src="./assets/svg/globe.svg">
+                  </li>
+                  <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom">
+                    <div class="item-body">
+                      <p class="small d-block text-black-50 m-0">Телефон</p>
+                      <p class="small m-0">+7 (499) 123-45-67</p>
+                    </div><img class="item-icon" src="./assets/svg/telephone.svg">
+                  </li>
+                  <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom">
+                    <div class="item-body">
+                      <p class="small d-block text-black-50 m-0">Email</p>
+                      <p class="small m-0">nikita.m@hexlet.io</p>
+                    </div><img class="item-icon" src="./assets/svg/envelop.svg">
+                  </li>
+                  <li class="list-group-item d-flex align-itmes-center justify-content-between border-0 border-bottom">
+                    <div class="item-body">
+                      <p class="small d-block text-black-50 m-0">Twitter</p>
+                      <p class="small m-0">@n_mikhaylov</p>
+                    </div><img class="item-icon" src="./assets/svg/people-sec.svg">
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="tab tab-hidden d-xl-none" id="current-chat">
+              <div class="contact border-bottom sticky-top bg-white p-4"><img class="rounded-circle" src="./assets/images/avatar_4.jpg" height="50">
+                <div class="contact-body">
+                  <h6 class="title">Вениамин Редакторович</h6>
+                  <p class="small text-muted text">Онлайн</p>
+                </div>
+              </div>
+              <div class="tab px-5">
+                <div class="d-flex flex-column gap-3 mt-5">
+                              <div class="message d-flex gap-3"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_4.jpg" height="45">
+                                <div class="bg-light radius shadow-sm p-4 pe-sm-4 pe-3">
+                                              <div class="message-body border-bottom mb-1">
+                                                <h6 class="lh-base fw-bold mb-1">Вениамин Редакторович</h6>
+                                                <p class="text-secondary mb-2">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</p>
+                                              </div>
+                                              <p class="small text-secondary m-0">8 минут назад</p>
+                                </div>
+                              </div>
+                              <div class="message d-flex gap-3 align-self-end"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_1.jpg" height="45">
+                                <div class="bg-primary radius shadow-sm p-4 pe-sm-4 pe-3">
+                                              <div class="message-body border-bottom mb-1">
+                                                <p class="text-white mb-2">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
+                                              </div>
+                                              <p class="small text-white-50 m-0">5 минут назад</p>
+                                </div>
+                              </div>
+                              <div class="message d-flex gap-3"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_4.jpg" height="45">
+                                <div class="bg-light radius shadow-sm p-4 pe-sm-4 pe-3">
+                                              <div class="message-body border-bottom mb-1">
+                                                <h6 class="lh-base fw-bold mb-1">Вениамин Редакторович</h6>
+                                                <p class="text-secondary mb-2">Лады</p>
+                                              </div>
+                                              <p class="small text-secondary m-0">5 минут назад</p>
+                                </div>
+                              </div>
+                              <div class="message d-flex gap-3 align-self-end"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_1.jpg" height="45">
+                                <div class="bg-primary radius shadow-sm p-4 pe-sm-4 pe-3">
+                                              <div class="message-body border-bottom mb-1">
+                                                <p class="text-white mb-2">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</p>
+                                              </div>
+                                              <p class="small text-white-50 m-0">3 минуты назад</p>
+                                </div>
+                              </div>
+                              <div class="message d-flex gap-3"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_4.jpg" height="45">
+                                <div class="bg-light radius shadow-sm p-4 pe-sm-4 pe-3">
+                                              <div class="message-body border-bottom mb-1">
+                                                <h6 class="lh-base fw-bold mb-1">Вениамин Редакторович</h6>
+                                                <p class="text-secondary mb-2">о_О</p>
+                                              </div>
+                                              <p class="small text-secondary m-0">Только что</p>
+                                </div>
+                              </div>
+                </div>
+              </div>
+              <form class="sticky-bottom mx-xl-5">
+                <input class="form-control shadow-none border-0 border-top p-4" type="text" placeholder="Напишите сообщение...">
+                <button class="send-btn btn btn-primary rounded-circle p-xl-4" type="submit" style="padding: 1.25rem"><img class="send-btn-img" src="./assets/svg/cursor.svg"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col d-none d-xl-flex flex-column border-start h-100 p-0">
+          <div class="contact border-bottom p-4"><img class="rounded-circle" src="./assets/images/avatar_4.jpg" height="50">
+            <div class="contact-body">
+              <h6 class="title">Вениамин Редакторович</h6>
+              <p class="small text-muted text">Онлайн</p>
+            </div>
+          </div>
+          <div class="tab px-5" id="current-chat">
+            <div class="d-flex flex-column gap-3 mt-5">
+                        <div class="message d-flex gap-3"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_4.jpg" height="45">
+                          <div class="bg-light radius shadow-sm p-4 pe-sm-4 pe-3">
+                                      <div class="message-body border-bottom mb-1">
+                                        <h6 class="lh-base fw-bold mb-1">Вениамин Редакторович</h6>
+                                        <p class="text-secondary mb-2">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</p>
+                                      </div>
+                                      <p class="small text-secondary m-0">8 минут назад</p>
+                          </div>
+                        </div>
+                        <div class="message d-flex gap-3 align-self-end"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_1.jpg" height="45">
+                          <div class="bg-primary radius shadow-sm p-4 pe-sm-4 pe-3">
+                                      <div class="message-body border-bottom mb-1">
+                                        <p class="text-white mb-2">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
+                                      </div>
+                                      <p class="small text-white-50 m-0">5 минут назад</p>
+                          </div>
+                        </div>
+                        <div class="message d-flex gap-3"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_4.jpg" height="45">
+                          <div class="bg-light radius shadow-sm p-4 pe-sm-4 pe-3">
+                                      <div class="message-body border-bottom mb-1">
+                                        <h6 class="lh-base fw-bold mb-1">Вениамин Редакторович</h6>
+                                        <p class="text-secondary mb-2">Лады</p>
+                                      </div>
+                                      <p class="small text-secondary m-0">5 минут назад</p>
+                          </div>
+                        </div>
+                        <div class="message d-flex gap-3 align-self-end"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_1.jpg" height="45">
+                          <div class="bg-primary radius shadow-sm p-4 pe-sm-4 pe-3">
+                                      <div class="message-body border-bottom mb-1">
+                                        <p class="text-white mb-2">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</p>
+                                      </div>
+                                      <p class="small text-white-50 m-0">3 минуты назад</p>
+                          </div>
+                        </div>
+                        <div class="message d-flex gap-3"><img class="d-none d-xl-block rounded-circle align-self-end" src="./assets/images/avatar_4.jpg" height="45">
+                          <div class="bg-light radius shadow-sm p-4 pe-sm-4 pe-3">
+                                      <div class="message-body border-bottom mb-1">
+                                        <h6 class="lh-base fw-bold mb-1">Вениамин Редакторович</h6>
+                                        <p class="text-secondary mb-2">о_О</p>
+                                      </div>
+                                      <p class="small text-secondary m-0">Только что</p>
+                          </div>
+                        </div>
+            </div>
+          </div>
+          <form class="position-relative mx-xl-5">
+            <input class="form-control shadow-none border-0 border-top p-4" type="text" placeholder="Напишите сообщение...">
+            <button class="send-btn btn btn-primary rounded-circle p-xl-4" type="submit" style="padding: 1.25rem"><img class="send-btn-img" src="./assets/svg/cursor.svg"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

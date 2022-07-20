@@ -1,5 +1,6 @@
 $utilities: map-merge($utilities,
-(
+    (
+// Border \\
     "border": (
         property: border,
         responsive: true,
@@ -42,6 +43,7 @@ $utilities: map-merge($utilities,
           0: 0,
         )
       ),
+// Radius \\
       "radius": (
         property: border-radius,
         responsive: true,
@@ -113,21 +115,6 @@ $utilities: map-merge($utilities,
         values: (
             null: $custom-radius
         )
-      ),
-      "position": (
-        responsive: true,
-        property: position,
-        values: static relative absolute fixed sticky
-      ),
-      "top": (
-        responsive: true,
-        property: top,
-        values: $position-values
-      ),
-      "bottom": (
-        responsive: true,
-        property: bottom,
-        values: $position-values
       )
-  )
+    )
 )
