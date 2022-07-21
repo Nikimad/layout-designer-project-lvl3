@@ -1,5 +1,7 @@
-map.merge {
-  $utilities: (
+@use "sass:map";
+$utilities: map.merge(
+  $utilities,
+  (
     "border": (
       property: border,
       responsive: true,
@@ -114,5 +116,5 @@ map.merge {
         null: $custom-radius,
       ),
     ),
-  );
-}
+  )
+);
