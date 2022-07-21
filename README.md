@@ -3,4 +3,4 @@
 
 [Reference](https://www.figma.com/file/FCKtzaxDPU4pguKapIbdko/Hexlet-LayoutDesigner-Project.-Hexlet-Messenger)
 
-[Deploy link](https://www.nikimad-chat.surge.sh)
+[Deploy link](https://nikimad.github.io/layout-designer-project-lvl3/build/index.html)
